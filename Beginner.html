@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beginner | FitZone</title>
+  <link rel="icon" type="image/x-icon" href="./logo.png" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(225, 235, 164, 0.562);
+    }
+
+    .navbar {
+      background-color: rgba(70, 67, 43, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .header-section {
+      background: linear-gradient(to bottom right, #e3eaa7, #f5f7dc);
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 48px;
+      color: rgba(70, 67, 43, 0.9);
+      margin-bottom: 10px;
+    }
+
+    .header-section p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .exercises-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .exercise-card {
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .exercise-card:hover {
+      transform: scale(1.03);
+    }
+
+    .exercise-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .exercise-card h3 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .exercise-card p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .exercise-card .sets-reps {
+      font-size: 15px;
+      font-weight: bold;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide-btn {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: rgba(70, 67, 43, 0.9);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .guide-btn:hover {
+      background-color: rgba(90, 85, 60, 0.9);
+    }
+
+    .guides-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .guides-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide {
+      margin-bottom: 30px;
+      width: 500px;
+      height: 100px;
+    }
+
+    .guide h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .guide p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FitZone</div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="intermediate.html">Intermediate</a></li>
+        <li><a href="advanced.html">Advanced</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="header-section">
+    <h1>Beginner Level</h1>
+    <p>Kickstart your fitness journey with easy, effective exercises for all levels of experience.</p>
+  </section>
+
+  <section class="exercises-container">
+    <div class="exercise-card">
+      <img src="./photos-beginner/jumpingjacks.jpg" alt="Jumping Jacks" />
+      <h3>Jumping Jacks</h3>
+      <p>Great for warming up and getting your heart rate up.</p>
+      <div class="sets-reps">3 sets • 30 seconds</div>
+      <a href="#guide-jumpingjacks" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-beginner/Squats.jpg" alt="Bodyweight Squats" />
+      <h3>Bodyweight Squats</h3>
+      <p>Strengthen your legs and glutes using your own body weight.</p>
+      <div class="sets-reps">3 sets • 12 reps</div>
+      <a href="#guide-squats" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-beginner/wallsits.PNG" alt="Wall Sits" />
+      <h3>Wall Sits</h3>
+      <p>Build endurance in your thighs and calves.</p>
+      <div class="sets-reps">3 sets • 30 seconds</div>
+      <a href="#guide-wallsits" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-beginner/turns.jpg" alt="Arm Circles" />
+      <h3>Arm Circles</h3>
+      <p>Loosen up your shoulders and increase flexibility.</p>
+      <div class="sets-reps">2 sets • 30 sec each direction</div>
+      <a href="#guide-armcircles" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-beginner/steptouches.jpg" alt="Step Touches" />
+      <h3>Step Touches</h3>
+      <p>Light cardio move to keep your body in motion.</p>
+      <div class="sets-reps">3 sets • 20 reps</div>
+      <a href="#guide-steptouches" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-beginner/kneepushup.jpg" alt="Knee Push-ups" />
+      <h3>Knee Push-ups</h3>
+      <p>A beginner-friendly push-up to build upper-body strength.</p>
+      <div class="sets-reps">3 sets • 10 reps</div>
+      <a href="#guide-kneepushups" class="guide-btn">View Guide</a>
+    </div>
+  </section>
+
+  <section class="guides-section">
+    <h2>Exercise Guides</h2>
+
+    <div class="guide" id="guide-jumpingjacks">
+      <h3>Jumping Jacks</h3>
+      <p>Stand tall with feet together and hands at your sides. Jump while spreading your legs and raising your arms overhead. Return to start. Repeat steadily.</p>
+    </div>
+
+    <div class="guide" id="guide-squats">
+      <h3>Bodyweight Squats</h3>
+      <p>Stand with feet shoulder-width apart. Bend your knees and lower your hips back and down, then return to standing. Keep your chest up.</p>
+    </div>
+
+    <div class="guide" id="guide-wallsits">
+      <h3>Wall Sits</h3>
+      <p>Lean against a wall with your feet hip-width apart. Slide down until your knees are at 90°, then hold for the desired time.</p>
+    </div>
+
+    <div class="guide" id="guide-armcircles">
+      <h3>Arm Circles</h3>
+      <p>Extend your arms to the sides at shoulder height. Rotate them forward in small circles, then reverse. Maintain a tight core.</p>
+    </div>
+
+    <div class="guide" id="guide-steptouches">
+      <h3>Step Touches</h3>
+      <p>Step side-to-side, gently tapping your opposite foot each time. Swing your arms for rhythm. Keep it low-impact and steady.</p>
+    </div>
+
+    <div class="guide" id="guide-kneepushups">
+      <h3>Knee Push-ups</h3>
+      <p>Start on hands and knees. Lower your chest toward the ground while keeping your back straight. Push back up to starting position.</p>
+    </div>
+  </section>
+</body>
+</html>

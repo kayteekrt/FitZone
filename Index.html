@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitZone</title>
+    <link rel="icon" type="image/x-icon" href="./logo.png">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">FitZone</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#courses">Courses</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Beginner.html">Beginner</a></li>
+                            <li><a href="intermediate.html">Intermediate</a></li>
+                            <li><a href="advanced.html">Advanced</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="greet"><b>Welcome to FitZone</b></h1>
+                <p class="tagline">Your personal guide to getting stronger, healthier, and more confident.</p>
+                <a href="#courses" class="hero-btn">Explore Courses</a>
+            </div>
+        </section>
+    
+        <section id="courses" class="courses-section">
+            <h2>Our Courses</h2>
+            <div class="courses-container">
+                <div class="course-card" id="beginner">
+                    <img src="./pexels-willpicturethis-1954524.jpg" alt="Beginner Course">
+                    <h3>Beginner</h3>
+                    <p>Start your fitness journey with easy-to-follow exercises.</p>
+                    <a href="beginner.html" class="course-btn">View Exercises</a>
+                </div>
+                <div class="course-card" id="intermediate">
+                    <img src="./pexels-victorfreitas-841130.jpg" alt="Intermediate Course">
+                    <h3>Intermediate</h3>
+                    <p>Step up your game with intermediate routines.</p>
+                    <a href="intermediate.html" class="course-btn">View Exercises</a>
+                </div>
+                <div class="course-card" id="advanced">
+                    <img src="./pexels-panther-1547248.jpg" alt="Advanced Course">
+                    <h3>Advanced</h3>
+                    <p>Challenge yourself with advanced workouts.</p>
+                    <a href="advanced.html" class="course-btn">View Exercises</a>
+                </div>
+            </div>
+        </section>
+    </body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgba(225, 235, 164, 0.562);
+        }
+
+        .navbar {
+            background-color: rgba(70, 67, 43, 0.9);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: rgba(70, 67, 43, 0.95);
+            top: 100%;
+            left: 0;
+            min-width: 160px;
+            z-index: 1000;
+        }
+
+        .dropdown-menu li a {
+            padding: 10px 15px;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom right, #e3eaa7, #f5f7dc);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding: 20px;
+            animation: floatIn 2s ease;
+            margin-top: -40px;
+        }
+
+        @keyframes floatIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .greet {
+            color: rgba(70, 67, 43, 0.9);
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: -20px;
+        }
+
+        .tagline {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: rgba(70, 67, 43, 0.9);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: rgba(90, 85, 60, 0.9);
+        }
+
+        .courses-section {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .courses-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: rgba(70, 67, 43, 0.9);
+        }
+
+        .courses-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .course-card {
+            background-color: #f8f8f8;
+            border-radius: 8px;
+            box-shadow: 10px 8px 16px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .course-card:hover {
+            transform: scale(1.05);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        .course-card p {
+            font-size: 16px;
+            color: #666;
+            margin: 10px 0 20px;
+        }
+
+        .course-btn {
+            background-color: rgba(70, 67, 43, 0.9);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .course-btn:hover {
+            background-color: rgba(90, 85, 60, 0.9);
+        }
+    </style>
+</html>

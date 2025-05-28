@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | FitZone</title>
+  <link rel="icon" type="image/x-icon" href="./Capture.PNG" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(225, 235, 164, 0.562);
+      color: #444;
+    }
+
+    .navbar {
+      background-color: rgba(70, 67, 43, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .about-section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .about-section h1 {
+      font-size: 42px;
+      color: rgba(70, 67, 43, 0.9);
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .about-section img {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">FitZone</div>
+    <ul class="nav-links">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-section">
+    <h1>About FitZone</h1>
+    <p>
+      FitZone is a beginner-friendly fitness platform designed to help you get started,
+      stay consistent, and level up your workout routine. Whether you're just beginning your
+      fitness journey or advancing to more challenging routines, FitZone offers curated exercises,
+      guides, and resources tailored to every level.
+    </p>
+    <p>
+      Our mission is to make fitness accessible and motivating for everyone. With simple navigation,
+      visual workout cards, and progressive difficulty levels, FitZone empowers you to take control
+      of your health, one rep at a time.
+    </p>
+    <img src="./logo.png    " alt="FitZone Motivation Image" />
+  </section>
+</body>
+</html>

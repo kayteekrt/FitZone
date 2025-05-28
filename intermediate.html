@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Intermediate | FitZone</title>
+  <link rel="icon" type="image/x-icon" href="./logo.png" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(225, 235, 164, 0.562);
+    }
+
+    .navbar {
+      background-color: rgba(70, 67, 43, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .header-section {
+      background: linear-gradient(to bottom right, #e3eaa7, #f5f7dc);
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 48px;
+      color: rgba(70, 67, 43, 0.9);
+      margin-bottom: 10px;
+    }
+
+    .header-section p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .exercises-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .exercise-card {
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .exercise-card:hover {
+      transform: scale(1.03);
+    }
+
+    .exercise-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .exercise-card h3 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .exercise-card p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .exercise-card .sets-reps {
+      font-size: 15px;
+      font-weight: bold;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide-btn {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: rgba(70, 67, 43, 0.9);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .guide-btn:hover {
+      background-color: rgba(90, 85, 60, 0.9);
+    }
+
+    .guides-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .guides-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide {
+      margin-bottom: 30px;
+    }
+
+    .guide h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .guide p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FitZone</div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="intermediate.html">Intermediate</a></li>
+        <li><a href="advanced.html">Advanced</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="header-section">
+    <h1>Intermediate Level</h1>
+    <p>Take your fitness to the next level with workouts that build strength, endurance, and confidence.</p>
+  </section>
+
+  <section class="exercises-container">
+    <div class="exercise-card">
+      <img src="./photos-intermediate/puishup.jpg" alt="Push-Ups" />
+      <h3>Push-Ups</h3>
+      <p>Builds upper-body strength: chest, shoulders, triceps.</p>
+      <div class="sets-reps">3 sets • 12–15 reps</div>
+      <a href="#guide-pushups" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-intermediate/plank.jpg" alt="Plank to Push-Up" />
+      <h3>Plank to Push-Up</h3>
+      <p>Combines core stability and upper-body control.</p>
+      <div class="sets-reps">3 sets • 10 reps each side</div>
+      <a href="#guide-plankpush" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-intermediate/lunges.jpg" alt="Lunges" />
+      <h3>Lunges (Alternating)</h3>
+      <p>Strengthens legs, glutes, and improves balance.</p>
+      <div class="sets-reps">3 sets • 10 reps each leg</div>
+      <a href="#guide-lunges" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-intermediate/climber.jpg" alt="Mountain Climbers" />
+      <h3>Mountain Climbers</h3>
+      <p>Cardio and core workout in one move.</p>
+      <div class="sets-reps">3 sets • 30 seconds</div>
+      <a href="#guide-climbers" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-intermediate/bike.jpg" alt="Bicycle Crunches" />
+      <h3>Bicycle Crunches</h3>
+      <p>Great for targeting abs and obliques.</p>
+      <div class="sets-reps">3 sets • 20 reps</div>
+      <a href="#guide-bicycle" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-intermediate/legraises.jpg" alt="Glute Bridges with Leg Raise" />
+      <h3>Glute Bridge + Leg Raise</h3>
+      <p>Targets glutes, hamstrings, and core.</p>
+      <div class="sets-reps">3 sets • 10 reps each leg</div>
+      <a href="#guide-glute" class="guide-btn">View Guide</a>
+    </div>
+  </section>
+
+  <section class="guides-section">
+    <h2>Exercise Guides</h2>
+
+    <div class="guide" id="guide-pushups">
+      <h3>Push-Ups</h3>
+      <p>Start in a plank position, lower your chest to the ground keeping your body straight, then push back up. Keep elbows close for triceps focus.</p>
+    </div>
+
+    <div class="guide" id="guide-plankpush">
+      <h3>Plank to Push-Up</h3>
+      <p>Start in forearm plank. Push up one arm at a time into a full plank, then return to forearms. Keep hips steady.</p>
+    </div>
+
+    <div class="guide" id="guide-lunges">
+      <h3>Lunges (Alternating)</h3>
+      <p>Step forward with one leg, lower hips until both knees are bent at 90°. Push back to start and switch legs.</p>
+    </div>
+
+    <div class="guide" id="guide-climbers">
+      <h3>Mountain Climbers</h3>
+      <p>From a plank position, alternate driving your knees toward your chest quickly. Maintain core stability.</p>
+    </div>
+
+    <div class="guide" id="guide-bicycle">
+      <h3>Bicycle Crunches</h3>
+      <p>Lie on your back, bring opposite elbow to knee while alternating legs in a pedaling motion. Keep your core tight.</p>
+    </div>
+
+    <div class="guide" id="guide-glute">
+      <h3>Glute Bridges with Leg Raise</h3>
+      <p>Lie on your back, lift hips into a bridge, raise one leg up straight, then lower and switch sides. Engage glutes and core.</p>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced | FitZone</title>
+  <link rel="icon" type="image/x-icon" href="./logo.png" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: rgba(225, 235, 164, 0.562);
+    }
+
+    .navbar {
+      background-color: rgba(70, 67, 43, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links li { position: relative; }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: block;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover { background-color: rgba(255, 255, 255, 0.2); }
+
+    .header-section {
+      background: linear-gradient(to bottom right, #e3eaa7, #f5f7dc);
+      padding: 100px 20px 60px;
+      text-align: center;
+    }
+
+    .header-section h1 {
+      font-size: 48px;
+      color: rgba(70, 67, 43, 0.9);
+      margin-bottom: 10px;
+    }
+
+    .header-section p {
+      font-size: 20px;
+      color: #555;
+    }
+
+    .exercises-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .exercise-card {
+      background-color: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 8px 6px 16px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .exercise-card:hover { transform: scale(1.03); }
+
+    .exercise-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    .exercise-card h3 {
+      font-size: 22px;
+      color: #333;
+    }
+
+    .exercise-card p {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .exercise-card .sets-reps {
+      font-size: 15px;
+      font-weight: bold;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide-btn {
+      margin-top: 10px;
+      padding: 8px 14px;
+      background-color: rgba(70, 67, 43, 0.9);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .guide-btn:hover { background-color: rgba(90, 85, 60, 0.9); }
+
+    .guides-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .guides-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: rgba(70, 67, 43, 0.9);
+    }
+
+    .guide {
+      margin-bottom: 30px;
+    }
+
+    .guide h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .guide p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">FitZone</div>
+      <ul class="nav-links">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="intermediate.html">Intermediate</a></li>
+        <li><a href="advanced.html">Advanced</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="header-section">
+    <h1>Advanced Level</h1>
+    <p>Challenge yourself with powerful, complex workouts for peak performance and strength.</p>
+  </section>
+
+  <section class="exercises-container">
+    <div class="exercise-card">
+      <img src="./photos-advanced/burpees.jpg" alt="Burpees" />
+      <h3>Burpees</h3>
+      <p>Explosive full-body workout combining strength and cardio.</p>
+      <div class="sets-reps">4 sets • 15 reps</div>
+      <a href="#guide-burpees" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-advanced/Pistol-squats.jpg" alt="Pistol Squats" />
+      <h3>Pistol Squats</h3>
+      <p>Challenging single-leg squat for balance and strength.</p>
+      <div class="sets-reps">3 sets • 8 reps each leg</div>
+      <a href="#guide-pistolsquats" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-advanced/Handstand-hold.jpg" alt="Handstand Hold" />
+      <h3>Handstand Hold</h3>
+      <p>Advanced shoulder and core stability move.</p>
+      <div class="sets-reps">3 sets • 20–30 sec hold</div>
+      <a href="#guide-handstand" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-advanced/jump-lunges.jpg" alt="Jump Lunges" />
+      <h3>Jump Lunges</h3>
+      <p>Build explosive leg power and coordination.</p>
+      <div class="sets-reps">3 sets • 12 reps each leg</div>
+      <a href="#guide-jumplunges" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-advanced/plank-shouldertaps.jpg" alt="Plank with Shoulder Taps" />
+      <h3>Plank Shoulder Taps</h3>
+      <p>Works core while improving balance and control.</p>
+      <div class="sets-reps">3 sets • 20 taps</div>
+      <a href="#guide-shouldertaps" class="guide-btn">View Guide</a>
+    </div>
+
+    <div class="exercise-card">
+      <img src="./photos-advanced/V-ups.jpg" alt="V-Ups" />
+      <h3>V-Ups</h3>
+      <p>Targets upper and lower abs in a single motion.</p>
+      <div class="sets-reps">3 sets • 15 reps</div>
+      <a href="#guide-vups" class="guide-btn">View Guide</a>
+    </div>
+  </section>
+
+  <section class="guides-section">
+    <h2>Exercise Guides</h2>
+
+    <div class="guide" id="guide-burpees">
+      <h3>Burpees</h3>
+      <p>Start standing, squat down, jump feet back to plank, do a push-up, jump feet forward, and leap upward. Repeat quickly with control.</p>
+    </div>
+
+    <div class="guide" id="guide-pistolsquats">
+      <h3>Pistol Squats</h3>
+      <p>Stand on one leg, extend the other leg forward, lower into a squat keeping the lifted leg off the ground, and return to standing.</p>
+    </div>
+
+    <div class="guide" id="guide-handstand">
+      <h3>Handstand Hold / Push-Ups</h3>
+      <p>Use a wall for balance. Kick into a handstand and hold with tight core. For push-ups, lower yourself toward the ground and press back up.</p>
+    </div>
+
+    <div class="guide" id="guide-jumplunges">
+      <h3>Jump Lunges</h3>
+      <p>Start in lunge position. Jump up explosively and switch legs mid-air, landing in a lunge on the opposite side.</p>
+    </div>
+
+    <div class="guide" id="guide-shouldertaps">
+      <h3>Plank with Shoulder Taps</h3>
+      <p>In plank position, tap your left shoulder with your right hand and alternate. Keep hips level and abs engaged.</p>
+    </div>
+
+    <div class="guide" id="guide-vups">
+      <h3>V-Ups</h3>
+      <p>Lie flat, lift arms and legs simultaneously to touch above your torso, forming a 'V'. Lower back down slowly and repeat.</p>
+    </div>
+  </section>
+</body>
+</html>
